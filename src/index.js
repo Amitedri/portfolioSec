@@ -7,6 +7,7 @@ import About from './components/about';
 import Skills from './components/skills';
 import Contact from './components/contact';
 import Head from './components/head';
+console.log = console.warn = console.error = () => {};
 
 const App = (props) => {
   const [width, setWidth] = React.useState('start');
