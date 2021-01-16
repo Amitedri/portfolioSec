@@ -1,0 +1,23 @@
+.iconsContainer {
+  height: 20%;
+  width: 3vw;
+  position: absolute;
+  bottom: 5%;
+  left: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.iconWrapper {
+  height: 10%;
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.iconWrapper img {
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+  filter: invert(100%);
+}
