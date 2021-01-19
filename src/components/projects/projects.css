@@ -1,0 +1,106 @@
+.projectsContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.projectsContainer h2 {
+  align-self: center;
+  font-size: 1.5rem;
+  color: #fefefefe;
+}
+.projectsContainer h1 {
+  align-self: center;
+  color: #fefefefe;
+  font-size: 3rem;
+}
+
+.projectsContent {
+  height: 60%;
+  width: 100vw;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+  .projectsContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .projectsHeader{
+    width: 70%;
+    height: 10%;
+    align-self: center;
+  }
+  .projectWrapper{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .projectsHeader img{
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    align-self: flex-end;
+  }
+ 
+  .arrowWrapper{
+    height: 15%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50%
+  };
+
+  .rightArrow{
+    transform: rotate(360deg);
+    height: 100%;
+    width: 100%;
+  }
+  .leftArrow{
+    transform: rotate(175deg);
+    height: 100%;
+    width: 100%;
+  }
+  .projects{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+  }
+  .buildWith{
+    height: 30%;
+    width: 100%;
+    color: white;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .buildWith h1{
+    font-size: 2rem;
+    align-self: center;
+  }
+  .footerImage{
+    height:25% ;
+    width: 100%;
+  }
+  .footerImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

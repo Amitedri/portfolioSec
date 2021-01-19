@@ -1,0 +1,152 @@
+.contactContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #333333;
+}
+.contactContent {
+  height: 50vh;
+  width: 60vw;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contactContainer h2 {
+  height: auto;
+  align-self: center;
+  font-weight: 700;
+  color: #fefefe;
+}
+.contactContainer h1 {
+  height: auto;
+  align-self: center;
+  font-weight: 700;
+  color: #fefefe;
+  font-size: 3rem;
+}
+/* COTACT INFO FIELDS */
+.persoalInfo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contactWrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+}
+
+.contactWrapper p {
+  align-self: flex-start;
+  color: #777777;
+}
+.contactWrapper h1 {
+  align-self: flex-start;
+  
+}
+.contactWrapper h2 {
+  align-self: flex-start;
+  margin-top: 5%;
+}
+/* FORM FIELDS */
+.form {
+    margin-top: 2vh;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.formInput {
+  all: unset;
+  height: 3vh;
+  background-color: #fefefe;
+  margin-bottom: 2vh;
+}
+.messageInput {
+  height: 8vh;
+}
+.formButton {
+  all: unset;
+  height: 3.5vh;
+  width: 6vw;
+  background-color: #ad4103f8;
+  border: 1px solid #fefefed3;
+  transition: all 1s ease-in-out;
+}
+
+.formButton:hover{
+background-color: #fefefe;
+color: #ad4103f8;
+border:1px solid #ad4103f8;
+}
+.footerWrapper{
+  height: 25%;
+  width: 100%;
+}
+.footerWrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+/* IPADS & MOBILE (FLEX) */
+
+@media screen and (max-width: 992px) {
+  .contactContainer h2{
+    margin-top: 20%;
+  }
+  .contactContent {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-top: 20%;
+  }
+  .formButton{
+    width: 65%;
+    align-self: flex-end;
+  }
+  .contactContent p {
+    color: white;
+  }
+  .contactWrapper h1{
+    margin: 0;
+  }
+  .persoalInfo{
+    align-self: flex-start;
+    height: 100%;
+    width: 50%;
+    margin: 0;
+  }
+  .contactWrapper{
+    margin: 0;
+    align-self: flex-start;
+  }
+  .form{
+    align-self: flex-end;
+    height: 100%;
+    width: 50%;
+  }
+  .footerWrapper{
+    height: auto;
+    width: 100%;
+  }
+  .footerWrapper img{
+    height: 100%;
+    width: 100%;
+  }
+  .contactContainer h2{
+    color: #CE6323;
+  }
+}
